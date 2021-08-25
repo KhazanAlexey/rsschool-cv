@@ -55,7 +55,7 @@ I had experience as a bartender. It helped me to improve my soft skill. I like c
 * University: Belarusian National Technical University
 * Courses:
     * Super IT
-    * Super-puper IT
+    * Super-Puper IT
 
 
 ## Languages
