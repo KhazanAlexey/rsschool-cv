@@ -1,0 +1,295 @@
+
+body {
+    background: #e5e5e5;
+    width: 100%;
+}
+
+.main-wrapper {
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff;
+
+}
+
+@media (min-width: 1600px) {
+    .main-wrapper {
+        width: 1400px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .main-wrapper {
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-wrapper {
+        width: 1000px;
+    }
+}
+
+.nav-wrapper {
+    display: flex;
+    width: 100%;
+    border: 1px solid;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.nav-wrapper > ul {
+    display: flex;
+    flex-direction: row;
+    /*list-style-type: none;*/
+}
+
+.nav-wrapper > ul > li {
+    display: block;
+    list-style-type: none;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 70px;
+    padding: 2px 2px 2px 2px;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    background-color: black;
+}
+
+.nav-wrapper > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.greeting {
+    align-self: center;
+}
+
+.greeting p {
+    width: 200px;
+}
+
+.my-photo {
+    cursor: pointer;
+}
+
+#photo {
+    border-radius: 50px;
+}
+
+.my-photo:hover {
+    opacity: 0.7;
+}
+
+h1 span {
+    color: blue;
+    cursor: pointer;
+}
+
+h1 span:hover {
+    background-color: grey;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-wrapper > p {
+    margin: 20px 0;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts>ul{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+
+}
+.contacts>ul>li{
+    display: block;
+    width: 75px;
+}
+.block-title {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.block-title::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    border-radius: 2px;
+    bottom: -4px;
+    background-color: green;
+}
+
+.block-title:hover:after {
+    width: 110%;
+    background: orange;
+}
+
+
+.about-wrapper p {
+    margin: 0 20px;
+
+}
+
+.skills-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    border-radius: 10px;
+}
+
+.skills > ul {
+    display: block;
+    background-color: #EDEDED;
+    width: 135px;
+    border-radius: 10px;
+}
+
+.skills > ul > li {
+    color: #555555;
+}
+
+.code-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.code {
+    width: 60%;
+    align-self: flex-end;
+}
+
+.code-example {
+    font-size: 1.4em;
+    width: 60%;
+    margin: 50px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #78C0A8;
+    line-height: 1.6;
+    position: relative;
+    background: #EDEDED;
+    align-self: flex-end;
+    white-space: normal;
+    word-break:break-word;
+
+}
+
+.code-example::before {
+    font-family: 'Arial', sans-serif;
+    content: "\201C";
+    color: #78C0A8;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+.otro-blockquote::after {
+    content: '';
+}
+
+.education-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education {
+    background-color: #EDEDED;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.education > ul {
+    display: block;
+    background-color: #EDEDED;
+
+}
+.education>ul>li{
+    color: #555555;
+}
+
+.languages-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.languages {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.languages > ul {
+    display: block;
+    background-color: #EDEDED;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.languages > ul > li {
+    color: #555555;
+}
+
+.footer-wrapper {
+    width: 100%;
+    border: 1px solid;
+    height: 70px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#rs-logo{
+    width: 82px;
+    align-self: center;
+    display: block;
+}
+#github{
+    display: block;
+    align-self: center;
+
+}
