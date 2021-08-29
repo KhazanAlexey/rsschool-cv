@@ -184,6 +184,8 @@ h1 span:hover {
     position: relative;
     background: #EDEDED;
     align-self: flex-end;
+    white-space: normal;
+    word-break:break-word
 }
 
 .code-example::before {
@@ -250,4 +252,22 @@ h1 span:hover {
     border: 1px solid;
     height: 70px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#rs-logo{
+    width: 82px;
+    align-self: center;
+    display: block;
+}
+#github{
+    display: block;
+    align-self: center;
+
 }
