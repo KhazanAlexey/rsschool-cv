@@ -147,13 +147,14 @@ h1 span:hover {
     display: flex;
     justify-content: center;
     align-self: flex-start;
+    border-radius: 10px;
 }
 
 .skills > ul {
     display: block;
     background-color: #EDEDED;
+    width: 135px;
     border-radius: 10px;
-    width: 150px;
 }
 
 .skills > ul > li {
@@ -164,6 +165,8 @@ h1 span:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
 }
 
 .code {
@@ -185,7 +188,8 @@ h1 span:hover {
     background: #EDEDED;
     align-self: flex-end;
     white-space: normal;
-    word-break:break-word
+    word-break:break-word;
+
 }
 
 .code-example::before {
@@ -205,6 +209,7 @@ h1 span:hover {
 .education-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .education {
@@ -221,6 +226,9 @@ h1 span:hover {
     display: block;
     background-color: #EDEDED;
 
+}
+.education>ul>li{
+    color: #555555;
 }
 
 .languages-wrapper {
