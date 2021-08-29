@@ -1,0 +1,81 @@
+body {
+    background: #e5e5e5;
+    width: 100%;
+}
+
+.main-wrapper {
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff;
+
+}
+
+@media (min-width: 1600px) {
+    .main-wrapper {
+        width: 1400px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .main-wrapper {
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-wrapper {
+        width: 1000px;
+    }
+}
+.nav-wrapper{
+    display: flex;
+    width: 100%;
+    border: 1px solid;
+    justify-content: flex-end;
+
+}
+.nav-wrapper> ul {
+    display: flex;
+    flex-direction: row;
+    /*list-style-type: none;*/
+     }
+.nav-wrapper> ul>li {
+    display: block;
+    list-style-type: none;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 70px;
+    padding: 2px 2px 2px 2px;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    background-color: black;
+
+}
+.nav-wrapper> ul>li>a {
+text-decoration: none;
+    color: white;
+}
+.header-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.greeting{
+align-self: center;
+
+}
+.greeting p {
+    width: 200px;
+}
+.my-photo{
+    align-self: center;
+}
+h1 span {
+    color: blue;
+    }
+h1 span:hover {
+    background-color: grey;
+}
