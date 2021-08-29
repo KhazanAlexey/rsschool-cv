@@ -1,3 +1,4 @@
+
 body {
     background: #e5e5e5;
     width: 100%;
@@ -34,7 +35,7 @@ body {
     width: 100%;
     border: 1px solid;
     justify-content: flex-end;
-
+    margin-bottom: 20px;
 }
 
 .nav-wrapper > ul {
@@ -54,7 +55,6 @@ body {
     position: relative;
     text-align: center;
     background-color: black;
-
 }
 
 .nav-wrapper > ul > li > a {
@@ -71,7 +71,6 @@ body {
 
 .greeting {
     align-self: center;
-
 }
 
 .greeting p {
@@ -79,11 +78,20 @@ body {
 }
 
 .my-photo {
-    align-self: center;
+    cursor: pointer;
+}
+
+#photo {
+    border-radius: 50px;
+}
+
+.my-photo:hover {
+    opacity: 0.7;
 }
 
 h1 span {
     color: blue;
+    cursor: pointer;
 }
 
 h1 span:hover {
@@ -96,47 +104,150 @@ h1 span:hover {
     align-items: center;
 }
 
+.about-wrapper > p {
+    margin: 20px 0;
+}
+
 .block-title {
     margin: 20px 20px;
-    width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
 }
-.block-title::after{
+
+.block-title::after {
     content: "";
     position: absolute;
     width: 50px;
     height: 3px;
     border-radius: 2px;
-bottom: -4px;
+    bottom: -4px;
     background-color: green;
+}
+
+.block-title:hover:after {
+    width: 110%;
+    background: orange;
 }
 
 
 .about-wrapper p {
     margin: 0 20px;
+
 }
-.skills-wrapper{
+
+.skills-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
-.skills{
+
+.skills {
     width: 50%;
     display: flex;
     justify-content: center;
     align-self: flex-start;
-
 }
-.skills ul{
+
+.skills > ul {
     display: block;
-    background-color: grey;
+    background-color: #EDEDED;
     border-radius: 10px;
     width: 150px;
+}
+
+.skills > ul > li {
+    color: #555555;
+}
+
+.code-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.code {
+    width: 60%;
+    align-self: flex-end;
+}
+
+.code-example {
+    font-size: 1.4em;
+    width: 60%;
+    margin: 50px auto;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #78C0A8;
+    line-height: 1.6;
+    position: relative;
+    background: #EDEDED;
+    align-self: flex-end;
+}
+
+.code-example::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #78C0A8;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+.otro-blockquote::after {
+    content: '';
+}
+
+.education-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.education {
+    background-color: #EDEDED;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.education > ul {
+    display: block;
+    background-color: #EDEDED;
 
 }
-.skills ul li {
-    color: white;
+
+.languages-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.languages {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.languages > ul {
+    display: block;
+    background-color: #EDEDED;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.languages > ul > li {
+    color: #555555;
+}
+
+.footer-wrapper {
+    width: 100%;
+    border: 1px solid;
+    height: 70px;
+    margin-top: 20px;
 }
