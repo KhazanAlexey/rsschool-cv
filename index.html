@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:400italic">
+    <title>CV</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+
+<main class="main-wrapper">
+    <div class="nav-wrapper">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="header-wrapper">
+        <div class="greeting">
+            <h1> Hi, I am
+                <span> Alexey Khazan </span></h1>
+            <p>I am a React developer. I can provide clean code and pixel perfect design.</p>
+        </div>
+        <div class="my-photo">
+            <img id="photo" alt="myPhoto" src="images/514676368.jpeg"/>
+        </div>
+
+    </div>
+    <div class="about-wrapper">
+        <div class="block-title" id="about"><h2>About me</h2></div>
+        <p>I like to write code. I understood it when I wrote my first program "Hello world!") Software ingeneering it
+            is neverending puzzle. I like to solve problems and glad when it's done. I want to develop myself in this
+            direction.
+
+            My first job was in road construction and it was a good experience. I learned to lead a team and find a
+            solution to the tasks set. This experience hardened my character and gave perseverance.
+
+            When I was a student I traveled to the USA. I worked there for 5 month. This experience helped me to improve
+            my English.
+
+            I had experience as a bartender. It helped me to improve my soft skill. I like communicate with different
+            people with different characters. Also I can mix for you Long Island Iced Tea :)
+
+        </p>
+    </div>
+    <div class="contacts">
+        <div class="block-title" id="contact"><h2>Contacts</h2></div>
+        <ul>
+            <li><a href="tel:+375296095081">My phone</a></li>
+            <li><a href="https://github.com/KhazanAlexey">My GitHub</a></li>
+        </ul>
+    </div>
+    <div class="skills-wrapper">
+        <div class="block-title"><h2>Skills</h2></div>
+        <div class="skills">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>React</li>
+                <li>Redux</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="projects">
+        <div class="block-title"><h2>Projects</h2></div>
+        <div class="projects-wrapper">
+            <div class="project-item">
+                <ul>
+                    <li><a href="https://khazanalexey.github.io/HouseBulider/" target="_blank"><img
+                            src="images/housebuilder.png" alt="housebulider" id="housebulider-logo"/></a>House builder.
+                        Program to create houses. You can change color and count of floors.
+                    </li>
+                </ul>
+            </div>
+            <div class="tecnologies">
+                <div ><h4>Technology</h4></div>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="code-wrapper">
+        <div class="block-title"><h2>Code example</h2></div>
+        <div class="code">
+           <pre><code class="javascript">
+let user = {
+    firstName: "Илья",
+    sayHi() {
+    let arrow = () =>{
+    return  alert(this.firstName);
+               }
+    arrow();
+    }
+};
+function document
+user.sayHi(); // Илья
+                </code></pre>
+        </div>
+    </div>
+
+
+    <div class="education-wrapper">
+        <div class="block-title"><h2>Education</h2></div>
+        <div class="education">
+            <ul>
+                <li>University: Belarusian National Technical University</li>
+                <li>Courses:
+                    <ul>
+                        <li>Super IT</li>
+                        <li>Super Puper</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="languages-wrapper">
+        <div class="block-title"><h2>Languages</h2></div>
+        <div class="languages">
+            <ul>
+                <li>English</li>
+                <li>Russian</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer-wrapper">
+        <div class="footer-content">
+            <a href="https://github.com/KhazanAlexey" class="main-text" id="github">GitHub</a>
+            <a href="https://rs.school/js/"><img src="images/rs_school_js.svg" alt="rs school" id="rs-logo"></a>
+        </div>
+    </footer>
+
+</main>
+</body>
+</html>
