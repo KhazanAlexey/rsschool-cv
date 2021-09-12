@@ -9,8 +9,13 @@
     <title>CV</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
+
 <main class="main-wrapper">
     <div class="nav-wrapper">
         <ul>
@@ -49,7 +54,7 @@
     <div class="contacts">
         <div class="block-title" id="contacts"><h2>Contacts</h2></div>
         <ul>
-            <li><a href="tel:+64932424461709">My phone</a></li>
+            <li><a href="tel:+375296095081">My phone</a></li>
             <li><a href="https://github.com/KhazanAlexey">My GitHub</a></li>
         </ul>
     </div>
@@ -69,20 +74,20 @@
     <div class="code-wrapper">
         <div class="block-title"><h2>Code example</h2></div>
         <div class="code">
-            <div class="code-example">
-                >let user = {
-                >firstName: "Илья",
-                >sayHi() {
-                >let arrow = () => alert(this.firstName);
-                >arrow();
-                >}
-                >};
-                >
-                >user.sayHi(); // Илья
-            </div>
+            <pre><code class="javascript">
+let user = {
+    firstName: "Илья",
+    sayHi() {
+    let arrow = () => alert(this.firstName);
+    arrow();
+    }
+};
+function document
+user.sayHi(); // Илья
+                </code></pre>
         </div>
-
     </div>
+
     <div class="education-wrapper">
         <div class="block-title"><h2>Education</h2></div>
         <div class="education">
@@ -107,12 +112,14 @@
             </ul>
         </div>
     </div>
+
     <footer class="footer-wrapper">
         <div class="footer-content">
             <a href="https://github.com/KhazanAlexey" class="main-text" id="github">GitHub</a>
             <a href="https://rs.school/js/"><img src="images/rs_school_js.svg" alt="rs school" id="rs-logo"></a>
         </div>
     </footer>
+
 </main>
 </body>
 </html>

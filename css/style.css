@@ -210,7 +210,7 @@ h1 span:hover {
 .code {
     width: 60%;
     align-self: flex-end;
-}
+    }
 @media (max-width: 613px) {
     .code {
         align-self: center;
