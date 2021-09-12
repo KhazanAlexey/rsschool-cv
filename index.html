@@ -74,17 +74,20 @@
     <div class="code-wrapper">
         <div class="block-title"><h2>Code example</h2></div>
         <div class="code">
-            <pre><code class="javascript">
+           <pre><code class="javascript">
 let user = {
     firstName: "Илья",
     sayHi() {
-    let arrow = () => alert(this.firstName);
+    let arrow = () =>{
+    return  alert(this.firstName);
+               }
     arrow();
     }
 };
 function document
 user.sayHi(); // Илья
                 </code></pre>
+            </div>
         </div>
     </div>
 
