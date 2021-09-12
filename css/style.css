@@ -8,14 +8,12 @@ body {
     position: relative;
     margin: 0 auto;
     background-color: #fff;
-
 }
 
 @media (min-width: 1600px) {
     .main-wrapper {
         width: 1400px;
     }
-
 }
 
 @media (min-width: 1400px) {
@@ -36,12 +34,26 @@ body {
     border: 1px solid;
     justify-content: flex-end;
     margin-bottom: 20px;
+    background-color: grey;
 }
 
 .nav-wrapper > ul {
     display: flex;
     flex-direction: row;
-    /*list-style-type: none;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+@media (max-width: 345px) {
+    .nav-wrapper{
+        justify-content: center;
+    }
+    .nav-wrapper > ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+    }
 }
 
 .nav-wrapper > ul > li {
@@ -68,6 +80,12 @@ body {
     flex-wrap: nowrap;
     justify-content: space-around;
 }
+@media (max-width: 745px) {
+    .header-wrapper {
+       flex-direction: column;
+        align-items: center;
+    }
+}
 
 .greeting {
     align-self: center;
@@ -83,6 +101,12 @@ body {
 
 #photo {
     border-radius: 50px;
+}
+
+@media (max-width: 442px) {
+    .header-wrapper {
+        margin: 20px;
+    }
 }
 
 .my-photo:hover {
@@ -128,7 +152,33 @@ h1 span:hover {
     justify-content: center;
     position: relative;
 }
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-item>ul{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
 
+}
+.project-item>ul>li{
+    display: block;
+    width: 60%;
+   }
+.tecnologies{
+    width: 30%;
+    margin-right: 20px;
+}
+.projects-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+#housebulider-logo{
+    width: 75px;
+    height: 75px;
+}
 .block-title::after {
     content: "";
     position: absolute;
@@ -184,40 +234,15 @@ h1 span:hover {
 }
 
 .code {
-    width: 60%;
+    margin: 20px;
     align-self: flex-end;
-}
-
-.code-example {
-    font-size: 1.4em;
-    width: 60%;
-    margin: 50px auto;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    color: #555555;
-    padding: 1.2em 30px 1.2em 75px;
-    border-left: 8px solid #78C0A8;
-    line-height: 1.6;
-    position: relative;
-    background: #EDEDED;
-    align-self: flex-end;
-    white-space: normal;
-    word-break:break-word;
-
-}
-
-.code-example::before {
-    font-family: 'Arial', sans-serif;
-    content: "\201C";
-    color: #78C0A8;
-    font-size: 4em;
-    position: absolute;
-    left: 10px;
-    top: -10px;
-}
-
-.otro-blockquote::after {
-    content: '';
+    border-radius: 10px;
+    }
+@media (max-width: 613px) {
+    .code {
+        align-self: center;
+        width: 100%;
+    }
 }
 
 .education-wrapper {
@@ -276,6 +301,7 @@ h1 span:hover {
     margin-top: 20px;
     display: flex;
     align-items: center;
+    background-color: grey;
 }
 .footer-content{
     width: 100%;
