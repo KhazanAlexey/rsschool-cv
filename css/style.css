@@ -8,14 +8,12 @@ body {
     position: relative;
     margin: 0 auto;
     background-color: #fff;
-
 }
 
 @media (min-width: 1600px) {
     .main-wrapper {
         width: 1400px;
     }
-
 }
 
 @media (min-width: 1400px) {
@@ -36,6 +34,7 @@ body {
     border: 1px solid;
     justify-content: flex-end;
     margin-bottom: 20px;
+    background-color: grey;
 }
 
 .nav-wrapper > ul {
@@ -68,6 +67,12 @@ body {
     flex-wrap: nowrap;
     justify-content: space-around;
 }
+@media (max-width: 745px) {
+    .header-wrapper {
+       flex-direction: column;
+        align-items: center;
+    }
+}
 
 .greeting {
     align-self: center;
@@ -83,6 +88,12 @@ body {
 
 #photo {
     border-radius: 50px;
+}
+
+@media (max-width: 442px) {
+    .header-wrapper {
+        margin: 20px;
+    }
 }
 
 .my-photo:hover {
@@ -187,6 +198,13 @@ h1 span:hover {
     width: 60%;
     align-self: flex-end;
 }
+@media (max-width: 613px) {
+    .code {
+        align-self: center;
+        width: 100%;
+    }
+}
+
 
 .code-example {
     font-size: 1.4em;
@@ -276,6 +294,7 @@ h1 span:hover {
     margin-top: 20px;
     display: flex;
     align-items: center;
+    background-color: grey;
 }
 .footer-content{
     width: 100%;
