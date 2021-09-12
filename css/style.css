@@ -40,7 +40,20 @@ body {
 .nav-wrapper > ul {
     display: flex;
     flex-direction: row;
-    /*list-style-type: none;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+@media (max-width: 345px) {
+    .nav-wrapper{
+        justify-content: center;
+    }
+    .nav-wrapper > ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+    }
 }
 
 .nav-wrapper > ul > li {
